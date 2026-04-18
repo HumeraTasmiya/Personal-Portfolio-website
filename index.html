@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Humera Tasmiya | Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Remixicon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-ht">HT</span>
+        <span class="logo-name">Humera Tasmiya</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Dark / Light toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="ri-sun-line" id="themeIcon"></i>
+        </button>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero" id="home">
+    <!-- Animated mesh blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="hero-content reveal">
+      <p class="hero-greeting"><span class="line-decor"></span>Hello, I'm</p>
+      <h1 class="hero-name">Humera<br /><em>Tasmiya</em></h1>
+      <p class="hero-subtitle">
+        <span class="typed-wrapper">
+          <span class="typed" id="typedText"></span><span class="cursor">|</span>
+        </span>
+      </p>
+      <p class="hero-tagline">
+        Crafting elegant digital experiences — where clean code meets beautiful design.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+
+      <!-- Floating skill chips -->
+      <div class="hero-chips">
+        <span class="chip">HTML5</span>
+        <span class="chip">CSS3</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">MongoDB</span>
+      </div>
+    </div>
+
+    <!-- Decorative portrait frame -->
+    <div class="hero-visual reveal reveal-right">
+      <div class="portrait-ring">
+        <div class="portrait-inner">
+          <div class="portrait-initials">HT</div>
+        </div>
+      </div>
+      <div class="hero-stat">
+        <strong>3+</strong>
+        <span>Projects</span>
+      </div>
+      <div class="hero-stat-2">
+        <strong>BCA</strong>
+        <span>Graduate</span>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left card -->
+        <div class="about-card glass reveal">
+          <div class="about-avatar">HT</div>
+          <h3>Humera Tasmiya</h3>
+          <p class="about-role">BCA Graduate · Web Developer</p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="ri-map-pin-2-line"></i>
+              <span>India</span>
+            </div>
+            <div class="detail-item">
+              <i class="ri-graduation-cap-line"></i>
+              <span>Bachelor of Computer Applications</span>
+            </div>
+            <div class="detail-item">
+              <i class="ri-briefcase-line"></i>
+              <span>Internship @ GrowOn</span>
+            </div>
+          </div>
+          <div class="about-socials">
+            <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+            <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+          </div>
+        </div>
+
+        <!-- Right text -->
+        <div class="about-text reveal reveal-right">
+          <p class="about-intro">
+            I'm a passionate <strong>Web Developer</strong> and fresh BCA graduate who believes that
+            great software starts with empathy for users and obsession with craft.
+          </p>
+          <p>
+            My journey into technology began with curiosity — tinkering with HTML pages and watching
+            raw markup transform into living, interactive experiences. That spark grew into a full
+            skill set spanning front-end design, back-end APIs, and database management.
+          </p>
+          <p>
+            During my internship at <strong>GrowOn</strong>, I contributed to real-world projects,
+            sharpened my collaborative skills, and discovered how powerful clean, purposeful code
+            can be. I'm now actively seeking opportunities where I can keep growing, contribute
+            meaningfully, and help build things that matter.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <i class="ri-code-s-slash-line"></i>
+              <div>
+                <strong>Full-Stack Ready</strong>
+                <span>MERN Stack</span>
+              </div>
+            </div>
+            <div class="highlight-box">
+              <i class="ri-palette-line"></i>
+              <div>
+                <strong>Design-Focused</strong>
+                <span>UI / UX Sensibility</span>
+              </div>
+            </div>
+            <div class="highlight-box">
+              <i class="ri-rocket-2-line"></i>
+              <div>
+                <strong>Fast Learner</strong>
+                <span>Always Evolving</span>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Skill card macro -->
+        <div class="skill-card glass reveal" data-skill="90">
+          <div class="skill-icon html"><i class="ri-html5-fill"></i></div>
+          <h4>HTML5</h4>
+          <p>Semantic markup, accessibility, SEO-friendly structure</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card glass reveal" data-skill="85">
+          <div class="skill-icon css"><i class="ri-css3-fill"></i></div>
+          <h4>CSS3</h4>
+          <p>Animations, Flexbox, Grid, responsive design</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card glass reveal" data-skill="80">
+          <div class="skill-icon js"><i class="ri-javascript-fill"></i></div>
+          <h4>JavaScript</h4>
+          <p>ES6+, DOM manipulation, async/await, APIs</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          <span class="skill-pct">80%</span>
+        </div>
+
+        <div class="skill-card glass reveal" data-skill="78">
+          <div class="skill-icon bootstrap"><i class="ri-bootstrap-fill"></i></div>
+          <h4>Bootstrap</h4>
+          <p>Rapid prototyping, grid system, utility classes</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+          <span class="skill-pct">78%</span>
+        </div>
+
+        <div class="skill-card glass reveal" data-skill="75">
+          <div class="skill-icon tailwind"><i class="ri-layout-4-fill"></i></div>
+          <h4>Tailwind CSS</h4>
+          <p>Utility-first styling, custom design systems</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          <span class="skill-pct">75%</span>
+        </div>
+
+        <div class="skill-card glass reveal" data-skill="70">
+          <div class="skill-icon node"><i class="ri-server-fill"></i></div>
+          <h4>Node.js</h4>
+          <p>RESTful APIs, event-driven back-end development</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          <span class="skill-pct">70%</span>
+        </div>
+
+        <div class="skill-card glass reveal" data-skill="68">
+          <div class="skill-icon express"><i class="ri-node-tree"></i></div>
+          <h4>Express.js</h4>
+          <p>Routing, middleware, MVC architecture</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+          <span class="skill-pct">68%</span>
+        </div>
+
+        <div class="skill-card glass reveal" data-skill="72">
+          <div class="skill-icon mongo"><i class="ri-database-2-fill"></i></div>
+          <h4>MongoDB</h4>
+          <p>NoSQL data modeling, aggregations, Mongoose</p>
+          <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+          <span class="skill-pct">72%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass reveal">
+          <div class="project-thumb thumb-1">
+            <i class="ri-user-star-line"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+              A fully responsive personal portfolio showcasing skills, projects, and achievements
+              with smooth animations, glassmorphism effects, and a dark/light mode toggle.
+            </p>
+            <div class="project-links">
+              <a href="#" class="proj-link"><i class="ri-external-link-line"></i> Live Demo</a>
+              <a href="#" class="proj-link proj-link-ghost"><i class="ri-github-fill"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass reveal">
+          <div class="project-thumb thumb-2">
+            <i class="ri-gallery-line"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Bootstrap</span><span>Tailwind</span><span>CSS</span>
+            </div>
+            <h3>Horse Breed Website</h3>
+            <p>
+              An informational multi-page website about horse breeds built with Bootstrap and
+              Tailwind CSS, featuring breed galleries, comparison tables, and responsive layouts.
+            </p>
+            <div class="project-links">
+              <a href="#" class="proj-link"><i class="ri-external-link-line"></i> Live Demo</a>
+              <a href="#" class="proj-link proj-link-ghost"><i class="ri-github-fill"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card glass reveal">
+          <div class="project-thumb thumb-3">
+            <i class="ri-calendar-check-line"></i>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span>Node.js</span><span>Express</span><span>MongoDB</span>
+            </div>
+            <h3>Student Attendance System</h3>
+            <p>
+              A full-stack attendance management application for educators — with student
+              registration, daily marking, monthly reports, and role-based access control.
+            </p>
+            <div class="project-links">
+              <a href="#" class="proj-link"><i class="ri-external-link-line"></i> Live Demo</a>
+              <a href="#" class="proj-link proj-link-ghost"><i class="ri-github-fill"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ACHIEVEMENTS ═══════════════════════ -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Milestones</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+
+      <div class="ach-grid">
+
+        <div class="ach-card glass reveal">
+          <div class="ach-icon"><i class="ri-building-4-line"></i></div>
+          <div class="ach-body">
+            <h4>Internship — GrowOn</h4>
+            <span class="ach-year">2026</span>
+            <p>Completed a professional web development internship, contributing to client projects and gaining hands-on industry experience.</p>
+          </div>
+        </div>
+
+        <div class="ach-card glass reveal">
+          <div class="ach-icon"><i class="ri-award-fill"></i></div>
+          <div class="ach-body">
+            <h4>BCA Degree</h4>
+            <span class="ach-year">2026</span>
+            <p>Successfully graduated with a Bachelor of Computer Applications, covering algorithms, databases, networking, and full-stack development.</p>
+          </div>
+        </div>
+
+        <div class="ach-card glass reveal">
+          <div class="ach-icon"><i class="ri-medal-line"></i></div>
+          <div class="ach-body">
+            <h4>Web Development Certification</h4>
+            <span class="ach-year">2023</span>
+            <p>Earned a certification in full-stack web development covering the MERN stack, REST APIs, and modern deployment practices.</p>
+          </div>
+        </div>
+
+        <div class="ach-card glass reveal">
+          <div class="ach-icon"><i class="ri-code-box-line"></i></div>
+          <div class="ach-body">
+            <h4>3+ Projects Delivered</h4>
+            <span class="ach-year">2023–2024</span>
+            <p>Successfully designed, developed, and deployed multiple real-world web applications from scratch, end-to-end.</p>
+          </div>
+        </div>
+
+        <div class="ach-card glass reveal">
+          <div class="ach-icon"><i class="ri-team-line"></i></div>
+          <div class="ach-body">
+            <h4>Collaborative Teamwork</h4>
+            <span class="ach-year">2024</span>
+            <p>Participated in team-based development sprints, practiced version control with Git, and contributed to shared codebases.</p>
+          </div>
+        </div>
+
+        <div class="ach-card glass reveal">
+          <div class="ach-icon"><i class="ri-lightbulb-flash-line"></i></div>
+          <div class="ach-body">
+            <h4>Continuous Learning</h4>
+            <span class="ach-year">Ongoing</span>
+            <p>Actively pursuing advanced JavaScript patterns, cloud fundamentals, and modern DevOps practices to stay at the cutting edge.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info reveal">
+          <h3>Let's build something together.</h3>
+          <p>I'm open to freelance projects, full-time opportunities, and interesting collaborations. Drop me a message and I'll get back to you within 24 hours.</p>
+
+          <div class="contact-links">
+            <a href="mailto:humera@example.com" class="contact-link">
+              <i class="ri-mail-send-line"></i>
+              <span>humera@example.com</span>
+            </a>
+            <a href="#" class="contact-link" target="_blank" rel="noopener">
+              <i class="ri-linkedin-fill"></i>
+              <span>linkedin.com/in/humeratasmiya</span>
+            </a>
+            <a href="#" class="contact-link" target="_blank" rel="noopener">
+              <i class="ri-github-fill"></i>
+              <span>github.com/humeratasmiya</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form class="contact-form glass reveal reveal-right" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or idea…"></textarea>
+            <span class="form-error" id="msgError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="ri-send-plane-fill"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="ri-checkbox-circle-fill"></i> Message sent! I'll respond shortly.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <span id="year"></span> Humera Tasmiya · Made with <i class="ri-heart-fill"></i> &amp; lots of coffee.</p>
+      <div class="footer-socials">
+        <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+        <a href="#" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+        <a href="mailto:humera@example.com" aria-label="Email"><i class="ri-mail-line"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
